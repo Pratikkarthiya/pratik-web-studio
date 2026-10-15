@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pratikkarthiya.github.io/pratik-web-studio/sitemap.xml
