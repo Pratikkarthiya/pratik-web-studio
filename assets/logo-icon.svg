@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" viewBox="0 0 460 500" role="img" aria-labelledby="title desc">
+  <ns0:title id="title">Pratik Web Studio icon</ns0:title>
+  <ns0:desc id="desc">Purple and cyan folded P with browser dots.</ns0:desc>
+  <ns0:defs>
+    <ns0:linearGradient id="violet" x2="1" y2="1">
+      <ns0:stop stop-color="#790bfa" />
+      <ns0:stop offset="1" stop-color="#a749fa" />
+    </ns0:linearGradient>
+    <ns0:linearGradient id="cyan" x2="1" y2="1">
+      <ns0:stop stop-color="#15e1eb" />
+      <ns0:stop offset="1" stop-color="#3373dc" />
+    </ns0:linearGradient>
+    <ns0:linearGradient id="deep" x2="1" y2="1">
+      <ns0:stop stop-color="#6924e7" />
+      <ns0:stop offset="1" stop-color="#300080" />
+    </ns0:linearGradient>
+  </ns0:defs>
+  <ns0:g transform="translate(65 45)">
+    <ns0:path fill="url(#violet)" d="M0 0H170C276 0 330 66 330 147H205L0 82Z" />
+    <ns0:path fill="url(#cyan)" d="M0 82H205C243 82 267 110 267 146L145 213Z" />
+    <ns0:path fill="url(#deep)" d="M205 82C282 74 330 101 330 147C330 230 280 272 198 311L145 336V213L267 146C267 110 243 82 205 82Z" />
+    <ns0:path fill="url(#cyan)" d="M145 213L267 146V269L145 336Z" />
+    <ns0:path fill="url(#violet)" d="M0 177L145 104V336L0 410Z" />
+    <ns0:path fill="#590bd1" d="M0 276L145 202V336L0 410Z" />
+    <ns0:g fill="#edf4ff">
+      <ns0:circle cx="42" cy="40" r="12" />
+      <ns0:circle cx="82" cy="40" r="12" />
+      <ns0:circle cx="122" cy="40" r="12" />
+    </ns0:g>
+  </ns0:g>
+</ns0:svg>
