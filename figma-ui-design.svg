@@ -1,0 +1,443 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 3600" width="2000" height="3600">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c071a" />
+      <stop offset="50%" stop-color="#140a2b" />
+      <stop offset="100%" stop-color="#080410" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#241344" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#150a2b" stop-opacity="0.9" />
+    </linearGradient>
+    <linearGradient id="highlightGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#790bfa" />
+      <stop offset="100%" stop-color="#15e1eb" />
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#15e1eb" />
+      <stop offset="100%" stop-color="#3373dc" />
+    </linearGradient>
+    <linearGradient id="violetGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8c2bff" />
+      <stop offset="100%" stop-color="#5505b3" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="40" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="20" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .title-white { fill: #f3f0fa; font-weight: 700; }
+    .text-muted { fill: #9e91ba; font-weight: 400; }
+    .text-dim { fill: #6f628c; font-weight: 400; }
+    .accent-cyan { fill: #15e1eb; }
+    .accent-violet { fill: #a749fa; }
+  </style>
+
+  <!-- ========================================== -->
+  <!-- FRAME 1: DESKTOP ARTBOARD (1440 x 3400)    -->
+  <!-- ========================================== -->
+  <g id="Desktop-Artboard" transform="translate(60, 60)">
+    <!-- Canvas Frame -->
+    <rect width="1440" height="3480" rx="16" fill="url(#bgGrad)" stroke="#382163" stroke-width="2"/>
+    <text x="40" y="-20" class="font-sans" font-size="20" font-weight="600" fill="#a749fa">FRAME 1: DESKTOP DESIGN (1440px)</text>
+
+    <!-- Background Ambient Glows -->
+    <circle cx="200" cy="300" r="240" fill="#790bfa" opacity="0.18" filter="url(#glow)"/>
+    <circle cx="1200" cy="500" r="300" fill="#15e1eb" opacity="0.12" filter="url(#glow)"/>
+    <circle cx="300" cy="2000" r="280" fill="#6924e7" opacity="0.15" filter="url(#glow)"/>
+
+    <!-- 1. Header / Navbar -->
+    <g id="Desktop-Navbar" transform="translate(100, 40)">
+      <rect width="1240" height="74" rx="20" fill="#180c33" fill-opacity="0.75" stroke="#3d226b" stroke-width="1.5"/>
+      
+      <!-- Brand Logo -->
+      <g transform="translate(30, 18)">
+        <rect width="38" height="38" rx="8" fill="url(#violetGrad)"/>
+        <text x="48" y="26" class="font-sans" font-size="20" font-weight="800" fill="#ffffff">Pratik <tspan fill="#15e1eb">Web Studio</tspan></text>
+      </g>
+
+      <!-- Nav Links -->
+      <g transform="translate(750, 43)" class="font-sans" font-size="15" font-weight="500">
+        <text x="0" y="0" fill="#d7cef0">Services</text>
+        <text x="90" y="0" fill="#d7cef0">Portfolio</text>
+        <text x="180" y="0" fill="#d7cef0">Pricing</text>
+      </g>
+
+      <!-- CTA Button -->
+      <g transform="translate(1060, 16)">
+        <rect width="150" height="42" rx="12" fill="url(#highlightGrad)"/>
+        <text x="75" y="26" class="font-sans" font-size="14" font-weight="700" fill="#080410" text-anchor="middle">Let's talk ↗</text>
+      </g>
+    </g>
+
+    <!-- 2. Hero Section -->
+    <g id="Desktop-Hero" transform="translate(100, 190)">
+      <!-- Eyebrow -->
+      <rect x="0" y="0" width="230" height="34" rx="17" fill="#251347" stroke="#482785"/>
+      <circle cx="18" cy="17" r="5" fill="#15e1eb"/>
+      <text x="32" y="22" class="font-sans" font-size="13" font-weight="600" fill="#cbbced">Websites for local businesses</text>
+
+      <!-- Hero Heading -->
+      <text x="0" y="95" class="font-sans title-white" font-size="64" line-height="1.15">
+        Stand out.
+      </text>
+      <text x="0" y="165" class="font-sans title-white" font-size="64">
+        Get noticed.
+      </text>
+      <text x="0" y="235" class="font-sans" font-size="64" font-weight="700" fill="url(#cyanGrad)">
+        Grow online.
+      </text>
+
+      <!-- Subtitle -->
+      <text x="0" y="295" class="font-sans text-muted" font-size="18">
+        A website that looks sharp, feels simple, and helps customers find you.
+      </text>
+      <text x="0" y="325" class="font-sans text-dim" font-size="15">
+        Designed by Pratik. Built around your business in Gujarat.
+      </text>
+
+      <!-- CTA Buttons -->
+      <g transform="translate(0, 365)">
+        <!-- Primary Button -->
+        <rect width="190" height="52" rx="14" fill="url(#highlightGrad)"/>
+        <text x="95" y="32" class="font-sans" font-size="15" font-weight="700" fill="#080410" text-anchor="middle">Plan my website ↗</text>
+
+        <!-- Secondary Button -->
+        <rect x="210" y="0" width="180" height="52" rx="14" fill="none" stroke="#5d35a3" stroke-width="1.5"/>
+        <text x="300" y="32" class="font-sans" font-size="15" font-weight="600" fill="#d7cef0" text-anchor="middle">Explore packages</text>
+      </g>
+
+      <!-- Pricing Offer Pill -->
+      <g transform="translate(0, 445)">
+        <rect width="260" height="36" rx="18" fill="#1b0e36" stroke="#482785"/>
+        <text x="20" y="23" class="font-sans" font-size="13" font-weight="600" fill="#15e1eb">Website packages from ₹5,999 ↗</text>
+      </g>
+
+      <!-- Hero 3D Showcase Card (Right Side) -->
+      <g transform="translate(680, 10)">
+        <rect width="560" height="470" rx="24" fill="url(#cardGrad)" stroke="#4d278f" stroke-width="1.5"/>
+        <!-- Window Bar -->
+        <rect width="560" height="42" rx="24" fill="#1b0e36"/>
+        <circle cx="28" cy="21" r="5" fill="#fa4b75"/>
+        <circle cx="44" cy="21" r="5" fill="#f5a623"/>
+        <circle cx="60" cy="21" r="5" fill="#15e1eb"/>
+        <text x="280" y="26" class="font-sans text-dim" font-size="11" font-weight="600" text-anchor="middle">YOUR NEXT CHAPTER, ONLINE</text>
+
+        <!-- Inner Card Artwork -->
+        <g transform="translate(40, 75)">
+          <text x="0" y="24" class="font-sans accent-cyan" font-size="12" font-weight="700">YOUR BUSINESS. YOUR WORLD.</text>
+          <text x="0" y="65" class="font-sans title-white" font-size="32">Made to be</text>
+          <text x="0" y="105" class="font-sans" font-size="32" font-weight="700" fill="#a749fa">remembered.</text>
+          <text x="0" y="145" class="font-sans text-muted" font-size="14">A beautiful space for your services, story, and clients.</text>
+
+          <!-- 3D Glowing Sphere -->
+          <circle cx="380" cy="130" r="90" fill="url(#highlightGrad)" opacity="0.85" filter="url(#softGlow)"/>
+          <circle cx="350" cy="100" r="30" fill="#ffffff" opacity="0.35"/>
+
+          <rect x="0" y="180" width="140" height="38" rx="10" fill="#3a1c70"/>
+          <text x="70" y="204" class="font-sans" font-size="13" font-weight="600" fill="#15e1eb" text-anchor="middle">Let's connect ↗</text>
+        </g>
+
+        <!-- Card Footer Tags -->
+        <g transform="translate(40, 420)" class="font-sans text-dim" font-size="12" font-weight="600">
+          <text x="0" y="0">✓ Thoughtful design</text>
+          <text x="170" y="0">✓ Clear information</text>
+          <text x="350" y="0">✓ Easy enquiries</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- 3. Services Section -->
+    <g id="Desktop-Services" transform="translate(100, 760)">
+      <text x="0" y="0" class="font-sans accent-cyan" font-size="14" font-weight="700">01 / WHAT WE DO</text>
+      <text x="0" y="40" class="font-sans title-white" font-size="38">Websites built for local business growth</text>
+
+      <g transform="translate(0, 80)">
+        <!-- Service Card 1 -->
+        <g transform="translate(0, 0)">
+          <rect width="285" height="230" rx="18" fill="url(#cardGrad)" stroke="#3e1f73"/>
+          <circle cx="45" cy="45" r="22" fill="#2d1554"/>
+          <text x="45" y="52" class="font-sans accent-cyan" font-size="18" text-anchor="middle">✦</text>
+          <text x="30" y="110" class="font-sans title-white" font-size="18">Custom Web Design</text>
+          <text x="30" y="145" class="font-sans text-muted" font-size="13">Tailored clean layouts that reflect your unique business identity.</text>
+          <text x="30" y="200" class="font-sans accent-cyan" font-size="12" font-weight="600">Modern &amp; Fresh →</text>
+        </g>
+
+        <!-- Service Card 2 -->
+        <g transform="translate(315, 0)">
+          <rect width="285" height="230" rx="18" fill="url(#cardGrad)" stroke="#3e1f73"/>
+          <circle cx="45" cy="45" r="22" fill="#2d1554"/>
+          <text x="45" y="52" class="font-sans accent-cyan" font-size="18" text-anchor="middle">📱</text>
+          <text x="30" y="110" class="font-sans title-white" font-size="18">Mobile-First Polish</text>
+          <text x="30" y="145" class="font-sans text-muted" font-size="13">Designed specifically for the smartphones 85% of your customers use.</text>
+          <text x="30" y="200" class="font-sans accent-cyan" font-size="12" font-weight="600">Adaptive Layouts →</text>
+        </g>
+
+        <!-- Service Card 3 -->
+        <g transform="translate(630, 0)">
+          <rect width="285" height="230" rx="18" fill="url(#cardGrad)" stroke="#3e1f73"/>
+          <circle cx="45" cy="45" r="22" fill="#2d1554"/>
+          <text x="45" y="52" class="font-sans accent-cyan" font-size="18" text-anchor="middle">⚡</text>
+          <text x="30" y="110" class="font-sans title-white" font-size="18">Lightning Fast</text>
+          <text x="30" y="145" class="font-sans text-muted" font-size="13">No bloated themes or slow servers. Instant loading speeds for high retention.</text>
+          <text x="30" y="200" class="font-sans accent-cyan" font-size="12" font-weight="600">Sub-second load →</text>
+        </g>
+
+        <!-- Service Card 4 -->
+        <g transform="translate(945, 0)">
+          <rect width="295" height="230" rx="18" fill="url(#cardGrad)" stroke="#3e1f73"/>
+          <circle cx="45" cy="45" r="22" fill="#2d1554"/>
+          <text x="45" y="52" class="font-sans accent-cyan" font-size="18" text-anchor="middle">📍</text>
+          <text x="30" y="110" class="font-sans title-white" font-size="18">Google Maps &amp; SEO</text>
+          <text x="30" y="145" class="font-sans text-muted" font-size="13">Help local clients in your city discover you through Google search &amp; maps.</text>
+          <text x="30" y="200" class="font-sans accent-cyan" font-size="12" font-weight="600">Local Authority →</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- 4. Pricing Packages Section -->
+    <g id="Desktop-Pricing" transform="translate(100, 1150)">
+      <text x="0" y="0" class="font-sans accent-cyan" font-size="14" font-weight="700">02 / CLEAR PRICING</text>
+      <text x="0" y="40" class="font-sans title-white" font-size="38">Simple packages with honest value</text>
+
+      <g transform="translate(0, 90)">
+        <!-- Package 1: Starter -->
+        <g transform="translate(0, 0)">
+          <rect width="380" height="520" rx="20" fill="url(#cardGrad)" stroke="#3e1f73"/>
+          <text x="36" y="55" class="font-sans accent-cyan" font-size="14" font-weight="700">STARTER</text>
+          <text x="36" y="105" class="font-sans title-white" font-size="38">₹5,999</text>
+          <text x="36" y="135" class="font-sans text-muted" font-size="14">Ideal for new businesses &amp; simple presence</text>
+          <line x1="36" y1="165" x2="344" y2="165" stroke="#3e1f73"/>
+          <g transform="translate(36, 200)" class="font-sans text-muted" font-size="14">
+            <text x="0" y="0">✓ One-page responsive static site</text>
+            <text x="0" y="36">✓ Mobile optimized design</text>
+            <text x="0" y="72">✓ Contact &amp; WhatsApp integration</text>
+            <text x="0" y="108">✓ Ready in 3 to 5 working days</text>
+            <text x="0" y="144">✓ 2 rounds of design revisions</text>
+          </g>
+          <rect x="36" y="430" width="308" height="48" rx="12" fill="#2d1554" stroke="#5d35a3"/>
+          <text x="190" y="460" class="font-sans" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle">Choose Starter ↗</text>
+        </g>
+
+        <!-- Package 2: Business (Featured) -->
+        <g transform="translate(420, -15)">
+          <rect width="400" height="550" rx="20" fill="url(#cardGrad)" stroke="#790bfa" stroke-width="2"/>
+          <rect x="250" y="24" width="120" height="28" rx="14" fill="url(#highlightGrad)"/>
+          <text x="310" y="43" class="font-sans" font-size="11" font-weight="800" fill="#080410" text-anchor="middle">MOST POPULAR</text>
+
+          <text x="36" y="60" class="font-sans accent-cyan" font-size="14" font-weight="700">BUSINESS</text>
+          <text x="36" y="112" class="font-sans title-white" font-size="32">Custom Quotation</text>
+          <text x="36" y="145" class="font-sans text-muted" font-size="14">Multi-page website for growing companies</text>
+          <line x1="36" y1="175" x2="364" y2="175" stroke="#4d278f"/>
+          <g transform="translate(36, 210)" class="font-sans text-muted" font-size="14">
+            <text x="0" y="0">✓ Up to 5 custom-designed pages</text>
+            <text x="0" y="36">✓ Full Google Maps &amp; Local SEO setup</text>
+            <text x="0" y="72">✓ Product / Service showcase</text>
+            <text x="0" y="108">✓ Interactive inquiry form</text>
+            <text x="0" y="144">✓ Ready in 7 to 10 working days</text>
+          </g>
+          <rect x="36" y="455" width="328" height="50" rx="12" fill="url(#highlightGrad)"/>
+          <text x="200" y="486" class="font-sans" font-size="15" font-weight="700" fill="#080410" text-anchor="middle">Request Quotation ↗</text>
+        </g>
+
+        <!-- Package 3: Premium -->
+        <g transform="translate(860, 0)">
+          <rect width="380" height="520" rx="20" fill="url(#cardGrad)" stroke="#3e1f73"/>
+          <text x="36" y="55" class="font-sans accent-cyan" font-size="14" font-weight="700">PREMIUM</text>
+          <text x="36" y="105" class="font-sans title-white" font-size="32">Custom Quotation</text>
+          <text x="36" y="135" class="font-sans text-muted" font-size="14">High-end bespoke digital experience</text>
+          <line x1="36" y1="165" x2="344" y2="165" stroke="#3e1f73"/>
+          <g transform="translate(36, 200)" class="font-sans text-muted" font-size="14">
+            <text x="0" y="0">✓ Up to 7 pages with 3D / motion effects</text>
+            <text x="0" y="36">✓ Bespoke typography &amp; vector art</text>
+            <text x="0" y="72">✓ Priority turnaround &amp; support</text>
+            <text x="0" y="108">✓ Complete branding integration</text>
+            <text x="0" y="144">✓ Performance &amp; speed guaranteed</text>
+          </g>
+          <rect x="36" y="430" width="308" height="48" rx="12" fill="#2d1554" stroke="#5d35a3"/>
+          <text x="190" y="460" class="font-sans" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle">Discuss Project ↗</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- 5. About Section -->
+    <g id="Desktop-About" transform="translate(100, 1850)">
+      <rect width="1240" height="400" rx="24" fill="url(#cardGrad)" stroke="#3e1f73"/>
+      <!-- Portrait Placeholder -->
+      <rect x="50" y="50" width="230" height="300" rx="16" fill="#20103b" stroke="#50288f"/>
+      <circle cx="165" cy="160" r="50" fill="#3a1c70"/>
+      <text x="165" y="170" class="font-sans title-white" font-size="36" text-anchor="middle">PK</text>
+      <text x="165" y="270" class="font-sans text-muted" font-size="13" text-anchor="middle">Pratik Karthiya</text>
+      <text x="165" y="290" class="font-sans accent-cyan" font-size="11" text-anchor="middle">Web Designer &amp; Developer</text>
+
+      <!-- About Text -->
+      <g transform="translate(330, 70)">
+        <text x="0" y="0" class="font-sans accent-cyan" font-size="13" font-weight="700">MEET YOUR WEB DESIGNER</text>
+        <text x="0" y="40" class="font-sans title-white" font-size="32">Hi, I'm Pratik.</text>
+        <text x="0" y="78" class="font-sans" font-size="32" font-weight="700" fill="url(#cyanGrad)">Let's build your next step.</text>
+        <text x="0" y="130" class="font-sans text-muted" font-size="15" width="800">
+          I create websites that help local businesses explain their services clearly and make it
+        </text>
+        <text x="0" y="155" class="font-sans text-muted" font-size="15">
+          frictionless for clients to connect. You work directly with me from concept to launch.
+        </text>
+        <text x="0" y="195" class="font-sans text-dim" font-size="14">
+          📍 Based in Gujarat • We speak Gujarati, Hindi &amp; English
+        </text>
+
+        <!-- CTA Buttons -->
+        <g transform="translate(0, 230)">
+          <rect width="180" height="46" rx="12" fill="#25d366"/>
+          <text x="90" y="28" class="font-sans" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle">💬 Chat on WhatsApp</text>
+
+          <rect x="200" y="0" width="160" height="46" rx="12" fill="none" stroke="#5d35a3"/>
+          <text x="280" y="28" class="font-sans" font-size="14" font-weight="600" fill="#d7cef0" text-anchor="middle">Send an email ↗</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- 6. Contact Section -->
+    <g id="Desktop-Contact" transform="translate(100, 2340)">
+      <text x="0" y="0" class="font-sans accent-cyan" font-size="14" font-weight="700">03 / START A CONVERSATION</text>
+      <text x="0" y="40" class="font-sans title-white" font-size="38">Let's put your business online</text>
+
+      <g transform="translate(0, 80)">
+        <!-- Left Column: Info -->
+        <g transform="translate(0, 0)">
+          <text x="0" y="24" class="font-sans text-muted" font-size="16">Start with a quick introduction — no technical knowledge needed.</text>
+          <text x="0" y="80" class="font-sans text-dim" font-size="14">DIRECT EMAIL:</text>
+          <text x="0" y="105" class="font-sans accent-cyan" font-size="18" font-weight="600">query@pratikwebstudio.com</text>
+
+          <text x="0" y="160" class="font-sans text-dim" font-size="14">FASTEST RESPONSE:</text>
+          <text x="0" y="185" class="font-sans title-white" font-size="18" font-weight="600">WhatsApp / Direct Call</text>
+
+          <rect x="0" y="220" width="300" height="70" rx="14" fill="#1b0e36" stroke="#482785"/>
+          <text x="20" y="250" class="font-sans title-white" font-size="14" font-weight="600">⚡ Average turnaround</text>
+          <text x="20" y="272" class="font-sans accent-cyan" font-size="13">Replies within 2 to 4 hours</text>
+        </g>
+
+        <!-- Right Column: Form UI Mockup -->
+        <g transform="translate(540, 0)">
+          <rect width="700" height="520" rx="20" fill="url(#cardGrad)" stroke="#3e1f73"/>
+
+          <!-- Form Fields -->
+          <g transform="translate(40, 40)">
+            <!-- Name -->
+            <text x="0" y="16" class="font-sans text-dim" font-size="12" font-weight="600">YOUR NAME</text>
+            <rect x="0" y="26" width="300" height="46" rx="10" fill="#1b0e36" stroke="#43217d"/>
+            <text x="16" y="55" class="font-sans text-muted" font-size="14">e.g. Pratik Karthiya</text>
+
+            <!-- Business -->
+            <text x="320" y="16" class="font-sans text-dim" font-size="12" font-weight="600">BUSINESS NAME</text>
+            <rect x="320" y="26" width="300" height="46" rx="10" fill="#1b0e36" stroke="#43217d"/>
+            <text x="336" y="55" class="font-sans text-muted" font-size="14">e.g. Acme Ceramics</text>
+
+            <!-- Phone -->
+            <text x="0" y="105" class="font-sans text-dim" font-size="12" font-weight="600">PHONE / WHATSAPP NUMBER</text>
+            <rect x="0" y="115" width="620" height="46" rx="10" fill="#1b0e36" stroke="#43217d"/>
+            <text x="16" y="144" class="font-sans text-muted" font-size="14">+91 98765 43210</text>
+
+            <!-- Service Selection -->
+            <text x="0" y="195" class="font-sans text-dim" font-size="12" font-weight="600">WHAT DO YOU NEED?</text>
+            <rect x="0" y="205" width="620" height="46" rx="10" fill="#1b0e36" stroke="#43217d"/>
+            <text x="16" y="234" class="font-sans title-white" font-size="14">Starter package (₹5,999) ▾</text>
+
+            <!-- Message -->
+            <text x="0" y="285" class="font-sans text-dim" font-size="12" font-weight="600">A LITTLE ABOUT YOUR PROJECT</text>
+            <rect x="0" y="295" width="620" height="85" rx="10" fill="#1b0e36" stroke="#43217d"/>
+            <text x="16" y="325" class="font-sans text-dim" font-size="14">Tell us what kind of website you are looking for...</text>
+
+            <!-- Submit Button -->
+            <rect x="0" y="405" width="620" height="50" rx="12" fill="url(#highlightGrad)"/>
+            <text x="310" y="436" class="font-sans" font-size="15" font-weight="700" fill="#080410" text-anchor="middle">Send Project Enquiry ↗</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <!-- 7. Footer -->
+    <g id="Desktop-Footer" transform="translate(100, 3350)">
+      <line x1="0" y1="0" x2="1240" y2="0" stroke="#2c1552"/>
+      <text x="0" y="50" class="font-sans title-white" font-size="16" font-weight="700">Pratik Web Studio</text>
+      <text x="200" y="50" class="font-sans text-dim" font-size="14">Thoughtful websites for local businesses in Gujarat.</text>
+      <text x="1240" y="50" class="font-sans accent-cyan" font-size="14" text-anchor="end">Back to top ↑</text>
+    </g>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- FRAME 2: MOBILE ARTBOARD (390 x 2900)      -->
+  <!-- ========================================== -->
+  <g id="Mobile-Artboard" transform="translate(1550, 60)">
+    <rect width="390" height="3480" rx="16" fill="url(#bgGrad)" stroke="#382163" stroke-width="2"/>
+    <text x="20" y="-20" class="font-sans" font-size="20" font-weight="600" fill="#15e1eb">FRAME 2: MOBILE (390px)</text>
+
+    <!-- Mobile Header -->
+    <g transform="translate(20, 30)">
+      <rect width="350" height="54" rx="14" fill="#180c33" stroke="#3d226b"/>
+      <text x="18" y="33" class="font-sans" font-size="15" font-weight="800" fill="#ffffff">Pratik <tspan fill="#15e1eb">Studio</tspan></text>
+      <!-- Burger Icon -->
+      <g transform="translate(305, 20)" stroke="#ffffff" stroke-width="2">
+        <line x1="0" y1="0" x2="22" y2="0"/>
+        <line x1="0" y1="7" x2="22" y2="7"/>
+        <line x1="0" y1="14" x2="22" y2="14"/>
+      </g>
+    </g>
+
+    <!-- Mobile Hero -->
+    <g transform="translate(24, 120)">
+      <rect width="210" height="28" rx="14" fill="#251347" stroke="#482785"/>
+      <circle cx="14" cy="14" r="4" fill="#15e1eb"/>
+      <text x="26" y="18" class="font-sans" font-size="11" font-weight="600" fill="#cbbced">Websites for local business</text>
+
+      <text x="0" y="65" class="font-sans title-white" font-size="34">Your business.</text>
+      <text x="0" y="105" class="font-sans title-white" font-size="34">Built to</text>
+      <text x="0" y="145" class="font-sans" font-size="34" font-weight="700" fill="url(#cyanGrad)">stand out.</text>
+
+      <text x="0" y="185" class="font-sans text-muted" font-size="14">A site that looks sharp, feels simple, and brings in calls &amp; WhatsApp inquiries.</text>
+
+      <rect x="0" y="225" width="342" height="46" rx="12" fill="url(#highlightGrad)"/>
+      <text x="171" y="254" class="font-sans" font-size="14" font-weight="700" fill="#080410" text-anchor="middle">Plan my website ↗</text>
+
+      <rect x="0" y="285" width="342" height="46" rx="12" fill="none" stroke="#5d35a3"/>
+      <text x="171" y="314" class="font-sans" font-size="14" font-weight="600" fill="#d7cef0" text-anchor="middle">Explore packages</text>
+    </g>
+
+    <!-- Mobile Pricing Card -->
+    <g transform="translate(24, 520)">
+      <rect width="342" height="440" rx="18" fill="url(#cardGrad)" stroke="#790bfa" stroke-width="1.5"/>
+      <text x="24" y="45" class="font-sans accent-cyan" font-size="13" font-weight="700">STARTER PACKAGE</text>
+      <text x="24" y="90" class="font-sans title-white" font-size="32">₹5,999</text>
+      <text x="24" y="118" class="font-sans text-muted" font-size="13">One-page mobile responsive site</text>
+      <line x1="24" y1="140" x2="318" y2="140" stroke="#3e1f73"/>
+      <g transform="translate(24, 170)" class="font-sans text-muted" font-size="13">
+        <text x="0" y="0">✓ Fast 1-page mobile layout</text>
+        <text x="0" y="30">✓ Direct WhatsApp CTA</text>
+        <text x="0" y="60">✓ Google Business integration</text>
+        <text x="0" y="90">✓ Ready in 3 to 5 days</text>
+      </g>
+      <rect x="24" y="360" width="294" height="46" rx="12" fill="url(#highlightGrad)"/>
+      <text x="171" y="389" class="font-sans" font-size="14" font-weight="700" fill="#080410" text-anchor="middle">Choose Starter ↗</text>
+    </g>
+
+    <!-- Floating WhatsApp Widget -->
+    <g id="Floating-WhatsApp" transform="translate(300, 3350)">
+      <circle cx="30" cy="30" r="28" fill="#25d366" filter="url(#softGlow)"/>
+      <text x="30" y="38" class="font-sans" font-size="24" fill="#ffffff" text-anchor="middle">💬</text>
+    </g>
+
+    <!-- Mobile Bottom Navigation Dock -->
+    <g id="Mobile-Bottom-Dock" transform="translate(20, 3400)">
+      <rect width="350" height="56" rx="20" fill="#180c33" fill-opacity="0.95" stroke="#3d226b"/>
+      <text x="50" y="33" class="font-sans text-muted" font-size="13">Projects</text>
+      <text x="150" y="33" class="font-sans text-muted" font-size="13">Pricing</text>
+      <text x="270" y="33" class="font-sans accent-cyan" font-size="13" font-weight="700">WhatsApp ↗</text>
+    </g>
+  </g>
+</svg>
