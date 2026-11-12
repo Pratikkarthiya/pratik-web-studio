@@ -46,6 +46,11 @@ h1{font-size:clamp(32px,4vw,48px);letter-spacing:-1.5px;margin:0}
   .bar{flex-wrap:wrap}
   input[type="search"]{min-width:0;flex:1}
 }
+@media(min-width:1100px){
+  .layout{grid-template-columns:220px minmax(0,1fr);gap:28px;padding:28px 4vw 56px}
+  .grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .filters{position:sticky;top:78px;align-self:start}
+}
 </style>
 </head>
 <body>

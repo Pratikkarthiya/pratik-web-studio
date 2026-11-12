@@ -43,6 +43,13 @@ input,select{width:100%;padding:10px;border:1px solid #111;background:#f7ffd4}
   .case,.calc{grid-template-columns:1fr}
   h1{letter-spacing:-1.5px}
 }
+@media(min-width:1100px){
+  body{display:grid;grid-template-columns:320px minmax(0,1fr)}
+  .demo,.top,h1,.calc{grid-column:1/-1}
+  .cases{flex-direction:column;align-items:stretch;padding:8px 8px 28px 4vw;margin:0}
+  .cases button{text-align:left}
+  .case{margin:0 4vw 28px 12px;align-self:start}
+}
 </style>
 </head>
 <body>

@@ -440,3 +440,56 @@ body>header{position:sticky;top:0;z-index:1000;isolation:isolate}
 .visual-tuition{background:linear-gradient(160deg,#0f1424,#24385c)}
 .visual-contractor{background:#1a1c17}
 .visual-shop{background:linear-gradient(160deg,#faf7f2,#e7d7c8)}
+
+
+/* Desktop layout: wider canvas, larger hero, bento portfolio. Mobile rules stay under 760px. */
+@media (min-width: 1100px) {
+  .wrap { max-width: 1320px; }
+  .hero {
+    grid-template-columns: minmax(440px, .88fr) 1.22fr;
+    align-items: center;
+    gap: 18px 36px;
+    padding: 54px 0 28px;
+    min-height: 0;
+  }
+  .scene { height: 640px; }
+  .strip {
+    display: grid;
+    grid-template-columns: 1.4fr repeat(4, 1fr);
+    align-items: center;
+    gap: 0;
+    padding: 18px 0;
+  }
+  .strip span { padding: 4px 18px; border-left: 1px solid #ffffff22; }
+  .strip span:first-child { border-left: 0; padding-left: 0; }
+  .services { grid-template-columns: 1.35fr 1fr 1fr; gap: 22px; align-items: stretch; }
+  .services .card:first-child { padding: 36px 34px; }
+  .portfolio-grid {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 18px;
+  }
+  .portfolio-card { grid-column: span 4; }
+  .portfolio-card.featured { grid-column: 1 / -1; }
+  .portfolio-grid > .portfolio-card:nth-child(2),
+  .portfolio-grid > .portfolio-card:nth-child(3) {
+    grid-column: span 6;
+    display: grid;
+    grid-template-columns: 1.08fr .92fr;
+    align-items: stretch;
+  }
+  .portfolio-grid > .portfolio-card:nth-child(2) .portfolio-top,
+  .portfolio-grid > .portfolio-card:nth-child(3) .portfolio-top { grid-column: 1 / -1; }
+  .portfolio-grid > .portfolio-card:nth-child(2) .portfolio-visual,
+  .portfolio-grid > .portfolio-card:nth-child(3) .portfolio-visual {
+    margin: 4px 0 22px 22px;
+    min-height: 300px;
+  }
+  .portfolio-grid > .portfolio-card:nth-child(2) .portfolio-copy,
+  .portfolio-grid > .portfolio-card:nth-child(3) .portfolio-copy {
+    justify-content: center;
+    padding-top: 8px;
+  }
+  .pricing-grid { gap: 26px; align-items: stretch; }
+  .about { grid-template-columns: 340px 1fr; gap: 72px; }
+  .contact { grid-template-columns: .9fr 1.1fr; gap: 48px; padding: 52px; }
+}
