@@ -1,12 +1,126 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Market Lane Store — Portfolio Demo</title><meta name="description" content="A concept local shop website by Pratik Web Studio."><style>
-:root{--ink:#2b211c;--clay:#c45b3e;--paper:#fbf6ef;--line:#eadfd2}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Georgia,serif}a{color:inherit;text-decoration:none}a:focus-visible{outline:3px solid var(--clay);outline-offset:4px}.demo-banner{background:#2b211c;color:#fff6ec;text-align:center;padding:9px 18px;font-size:12px;font-family:Arial,sans-serif}.demo-banner a{font-weight:700}.wrap{max-width:1100px;margin:auto;padding:0 28px}header{background:#fbf6efee;border-bottom:1px solid var(--line);position:sticky;top:0}nav{min-height:74px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:24px}.navlinks{display:flex;gap:18px;align-items:center;font-family:Arial,sans-serif;font-size:14px}.btn{display:inline-flex;min-height:46px;align-items:center;padding:12px 16px;background:var(--clay);color:#fff;border-radius:999px;font-family:Arial,sans-serif;font-weight:700;font-size:14px}.btn.line{background:transparent;color:var(--ink);border:1px solid #c9b8a6}.hero{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center;padding:60px 0}.eyebrow{font-family:Arial,sans-serif;letter-spacing:2px;text-transform:uppercase;font-size:11px;font-weight:800;color:var(--clay)}h1{font-size:clamp(44px,6vw,72px);line-height:.98;font-weight:500;letter-spacing:-2px;margin:12px 0}h1 em{color:var(--clay);font-style:italic}p{font-family:Arial,sans-serif;color:#6d5d52;line-height:1.7}.shelf{display:grid;grid-template-columns:1fr 1fr;gap:12px}.shelf div{background:#fff;border:1px solid var(--line);border-radius:16px;min-height:150px;padding:18px;display:flex;flex-direction:column;justify-content:flex-end}.shelf div:first-child{background:#f3d7b5;grid-column:1/-1;min-height:170px}.shelf strong{font-family:Arial,sans-serif;font-size:13px}section{padding:60px 0}h2{font-size:clamp(32px,4vw,48px);font-weight:500;letter-spacing:-1px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px}.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px}.card h3{margin:0 0 8px;font-size:22px;font-weight:500}.card p{margin:0;font-size:14px}.cta{background:#c45b3e;color:#fff;border-radius:20px;padding:32px;display:flex;justify-content:space-between;align-items:center;gap:16px}.cta .btn{background:#fff;color:#2b211c}.cta p{color:#ffe8df}.note{font-family:Arial,sans-serif;font-size:12px;color:#6d5d52;margin-top:10px}footer{border-top:1px solid var(--line);padding:22px 0;font-family:Arial,sans-serif;font-size:12px;color:#6d5d52}.foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-@media(max-width:760px){.wrap{padding:0 18px}.navlinks a:not(.btn){display:none}.hero,.grid{grid-template-columns:1fr}.cta{display:block}.cta .btn{margin-top:12px}}
-</style></head><body>
-<div class="demo-banner">Portfolio demo by Pratik Web Studio · Fictional shop, nothing for sale · <a href="../../#work">Back to portfolio</a></div>
-<header><nav class="wrap"><a class="brand" href="#top">Market Lane</a><div class="navlinks"><a href="#aisle">In store</a><a class="btn" href="#contact">Visit hours ↗</a></div></nav></header>
-<main id="top"><div class="wrap"><div class="hero"><div><div class="eyebrow">A neighbourhood shop</div><h1>Open today.<br><em>Easy to find.</em></h1><p>A small concept for a local store. It shows what you sell, when you are open, and how someone nearby can reach you.</p><a class="btn" href="#aisle">What is on the shelf ↗</a></div><div class="shelf" role="img" aria-label="Illustrated shop shelves"><div><strong>Today’s counter</strong></div><div><strong>Daily needs</strong></div><div><strong>Household</strong></div></div></div></div>
-<section id="aisle"><div class="wrap"><div class="eyebrow">Simple sections</div><h2>Enough for a first visit.</h2><div class="grid"><article class="card"><h3>What you stock</h3><p>A few groups of products, not a full catalogue, so the page stays light.</p></article><article class="card"><h3>Hours and area</h3><p>Opening times and the neighbourhood, written the way regulars already talk.</p></article><article class="card"><h3>Call or WhatsApp</h3><p>A real shop site would place the verified number here.</p></article></div></div></section>
-<section id="contact"><div class="wrap"><div class="cta"><div><h2>A shop site, without the clutter.</h2><p>Built around your photos, hours, and one way to enquire.</p></div><a class="btn" href="../../#contact">Contact Pratik ↗</a></div><p class="note">Market Lane is a fictional portfolio concept. It does not sell products.</p></div></section>
-</main><footer><div class="wrap foot"><span>Market Lane · portfolio concept</span><a href="../../#work">Back to Pratik Web Studio ↗</a></div></footer>
-</body></html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Market Lane Aisle — Portfolio Demo</title>
+<meta name="description" content="A local shop catalog concept by Pratik Web Studio. Nothing is for sale.">
+<style>
+:root{--ink:#1c1917;--line:#e7e0d6;--paper:#faf7f2;--clay:#9a3412}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:ui-sans-serif,system-ui,sans-serif}
+a{color:inherit}
+button{font:inherit;cursor:pointer}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #c2410c;outline-offset:2px}
+.demo{background:#1c1917;color:#faf7f2;text-align:center;font-size:12px;padding:8px 12px}
+.bar{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px 4vw;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0}
+.brand{font-weight:800;letter-spacing:-.4px}
+.tools{display:flex;gap:8px;align-items:center}
+input[type="search"]{border:1px solid var(--line);border-radius:999px;padding:10px 14px;min-width:180px;background:#fff}
+.bag{border:0;background:var(--ink);color:#fff;border-radius:999px;padding:10px 14px}
+.layout{display:grid;grid-template-columns:180px 1fr;gap:18px;padding:18px 4vw 40px}
+.filters{display:flex;flex-direction:column;gap:6px}
+.filters button{text-align:left;border:0;background:transparent;padding:8px 0;border-bottom:1px solid var(--line)}
+.filters button.on{font-weight:800;color:var(--clay)}
+.head{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+h1{font-size:clamp(32px,4vw,48px);letter-spacing:-1.5px;margin:0}
+.count{color:#78716c;font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.swatch{height:120px}
+.card div{padding:12px}
+.card h2{font-size:16px;margin:0 0 4px}
+.card p{margin:0;color:#78716c;font-size:13px}
+.row{display:flex;justify-content:space-between;align-items:center;margin-top:10px}
+.card button{border:1px solid var(--ink);background:#fff;border-radius:8px;padding:8px 10px}
+.card button.in{background:var(--ink);color:#fff}
+.drawer{margin-top:16px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px}
+.drawer li{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--line);font-size:14px}
+.total{font-weight:800;margin-top:8px}
+.note{color:#78716c;font-size:12px}
+@media(max-width:800px){
+  .layout,.grid{grid-template-columns:1fr}
+  .filters{flex-direction:row;overflow:auto}
+  .filters button{border:1px solid var(--line);border-radius:99px;padding:8px 12px;background:#fff;white-space:nowrap}
+  .bar{flex-wrap:wrap}
+  input[type="search"]{min-width:0;flex:1}
+}
+</style>
+</head>
+<body>
+<div class="demo">Portfolio demo · fictional shop · the bag does not check out or take payment · <a href="../../#work">Back to portfolio</a></div>
+<header class="bar">
+  <div class="brand">Market Lane</div>
+  <div class="tools">
+    <input id="q" type="search" placeholder="Search the aisle" aria-label="Search products">
+    <button class="bag" type="button" id="bag">Bag 0</button>
+  </div>
+</header>
+<div class="layout">
+  <aside class="filters" id="filters"></aside>
+  <main>
+    <div class="head">
+      <h1 id="aisle">All aisles</h1>
+      <div class="count" id="count"></div>
+    </div>
+    <div class="grid" id="grid"></div>
+    <section class="drawer" id="drawer" hidden>
+      <strong>Bag</strong>
+      <ul id="lines"></ul>
+      <div class="total" id="total"></div>
+      <p class="note">Sample total only. This store does not sell or deliver.</p>
+      <p><a href="../../#contact">Want a catalog like this for your shop?</a></p>
+    </section>
+  </main>
+</div>
+<script>
+const products = [
+  { id:"rice", name:"Daily rice", cat:"Grocery", note:"1 kg · sample", price:62, color:"#f3e2c2" },
+  { id:"oil", name:"Groundnut oil", cat:"Grocery", note:"1 L · sample", price:210, color:"#f6d98a" },
+  { id:"soap", name:"Bath soap", cat:"Home", note:"Pack of 3", price:99, color:"#d9e7f5" },
+  { id:"bulb", name:"LED bulb", cat:"Home", note:"9W · sample", price:120, color:"#efe7a8" },
+  { id:"tea", name:"Leaf tea", cat:"Grocery", note:"250 g · sample", price:145, color:"#d7c4a3" },
+  { id:"notebook", name:"Notebook", cat:"Stationery", note:"172 pages", price:55, color:"#f7d7d0" }
+];
+const cats = ["All","Grocery","Home","Stationery"];
+let cat = "All";
+let q = "";
+const bag = new Map();
+function money(n){ return "₹" + n.toLocaleString("en-IN"); }
+function render(){
+  document.getElementById("filters").innerHTML = cats.map(c =>
+    `<button type="button" class="${c===cat?"on":""}" data-cat="${c}" aria-pressed="${c===cat}">${c}</button>`
+  ).join("");
+  const list = products.filter(p => (cat==="All" || p.cat===cat) && (p.name+" "+p.cat).toLowerCase().includes(q));
+  document.getElementById("aisle").textContent = cat === "All" ? "All aisles" : cat;
+  document.getElementById("count").textContent = list.length + " items · sample stock";
+  document.getElementById("grid").innerHTML = list.map(p => `
+    <article class="card">
+      <div class="swatch" style="background:${p.color}"></div>
+      <div>
+        <h2>${p.name}</h2>
+        <p>${p.note}</p>
+        <div class="row"><b>${money(p.price)}</b><button type="button" data-id="${p.id}" class="${bag.has(p.id)?"in":""}">${bag.has(p.id)?"In bag":"Add"}</button></div>
+      </div>
+    </article>`).join("") || "<p>Nothing matches that search.</p>";
+  const lines = [...bag.values()];
+  document.getElementById("bag").textContent = "Bag " + lines.reduce((s,i)=>s+i.qty,0);
+  const drawer = document.getElementById("drawer");
+  drawer.hidden = lines.length === 0;
+  document.getElementById("lines").innerHTML = lines.map(i => `<li><span>${i.name} × ${i.qty}</span><span>${money(i.price*i.qty)}</span></li>`).join("");
+  document.getElementById("total").textContent = "Sample total " + money(lines.reduce((s,i)=>s+i.price*i.qty,0));
+  document.querySelectorAll("#filters button").forEach(b => b.onclick = () => { cat = b.dataset.cat; render(); });
+  document.querySelectorAll("#grid button").forEach(b => b.onclick = () => {
+    const p = products.find(x => x.id === b.dataset.id);
+    const cur = bag.get(p.id);
+    if (cur) bag.set(p.id, { ...cur, qty: cur.qty + 1 });
+    else bag.set(p.id, { ...p, qty: 1 });
+    render();
+  });
+}
+document.getElementById("q").addEventListener("input", e => { q = e.target.value.trim().toLowerCase(); render(); });
+render();
+</script>
+</body>
+</html>

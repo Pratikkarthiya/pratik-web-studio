@@ -1,12 +1,116 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>SolidLine Works — Portfolio Demo</title><meta name="description" content="A concept contractor website by Pratik Web Studio."><style>
-:root{--ink:#1b1e1c;--amber:#e2a23a;--paper:#f4f1ea;--line:#e2ddd2}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}a{color:inherit;text-decoration:none}a:focus-visible{outline:3px solid var(--amber);outline-offset:4px}.demo-banner{background:#1b1e1c;color:#f6efe2;text-align:center;padding:9px 18px;font-size:12px}.demo-banner a{color:#f3c56a;font-weight:700}.wrap{max-width:1120px;margin:auto;padding:0 28px}header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0}nav{min-height:74px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:800;letter-spacing:-.5px}.brand i{font-style:normal;color:var(--amber);margin-right:6px}.navlinks{display:flex;gap:18px;align-items:center;font-size:14px}.btn{display:inline-flex;min-height:46px;align-items:center;padding:12px 16px;background:#1b1e1c;color:#fff;border-radius:6px;font-weight:700;font-size:14px}.btn.amber{background:var(--amber);color:#1b1e1c}.hero{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center;padding:64px 0}.eyebrow{letter-spacing:2px;text-transform:uppercase;font-size:11px;font-weight:800;color:#8a6a28}h1{font-size:clamp(40px,5vw,64px);line-height:1.02;letter-spacing:-2px;margin:12px 0}p{color:#5e615c;line-height:1.7}.site{background:#2a2e2b;min-height:380px;border-radius:18px;position:relative;overflow:hidden;color:#fff}.roof{position:absolute;top:48px;left:18%;right:18%;height:70px;background:#e2a23a;clip-path:polygon(50% 0,100% 100%,0 100%)}.block{position:absolute;left:22%;right:22%;bottom:0;height:58%;background:#d7d2c8}.window{position:absolute;width:18%;height:22%;background:#8fb7c9;bottom:28%}.window.l{left:30%}.window.r{right:30%}.caption{position:absolute;left:16px;bottom:14px;font-size:12px;color:#f3e7cf}section{padding:64px 0}h2{font-size:clamp(30px,4vw,46px);letter-spacing:-1.4px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px}.card h3{margin:0 0 8px}.card p{margin:0;font-size:14px}.cta{background:#1b1e1c;color:#fff;border-radius:18px;padding:32px;display:flex;justify-content:space-between;gap:16px;align-items:center}.cta p{color:#d9d6cf}.note{font-size:12px;color:#6d706b;margin-top:10px}footer{border-top:1px solid var(--line);padding:22px 0;font-size:12px;color:#6d706b}.foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-@media(max-width:760px){.wrap{padding:0 18px}.navlinks a:not(.btn){display:none}.hero,.grid{grid-template-columns:1fr}.hero{padding:36px 0}.site{min-height:280px}.cta{display:block}.cta .btn{margin-top:12px}}
-</style></head><body>
-<div class="demo-banner">Portfolio demo by Pratik Web Studio · Fictional contractor, no quotes or bookings · <a href="../../#work">Back to portfolio</a></div>
-<header><nav class="wrap"><a class="brand" href="#top"><i>▣</i>SolidLine Works</a><div class="navlinks"><a href="#work">Work</a><a class="btn" href="#contact">Request a visit ↗</a></div></nav></header>
-<main id="top"><div class="wrap"><div class="hero"><div><div class="eyebrow">Home repairs and small builds</div><h1>Work you can see before you call.</h1><p>A concept site for a local contractor. Visitors get the services, a few project types, and one clear way to ask for a site visit.</p><a class="btn" href="#work">See the kind of work ↗</a></div><div class="site" role="img" aria-label="Simple illustrated house"><div class="roof"></div><div class="block"></div><div class="window l"></div><div class="window r"></div><span class="caption">Sample project look</span></div></div></div>
-<section id="work"><div class="wrap"><div class="eyebrow">Services</div><h2>The jobs people search for.</h2><div class="grid"><article class="card"><h3>Painting and repairs</h3><p>Short descriptions so a homeowner knows what you take on.</p></article><article class="card"><h3>Small builds</h3><p>Rooms, shops, and site work explained without jargon.</p></article><article class="card"><h3>A visit, not a form maze</h3><p>On a real site this button would open WhatsApp or a phone call.</p></article></div></div></section>
-<section id="contact"><div class="wrap"><div class="cta"><div><h2>Need a contractor site?</h2><p>Same structure, your photos, your city, your services.</p></div><a class="btn amber" href="../../#contact">Contact Pratik ↗</a></div><p class="note">SolidLine Works is a fictional design demo. It does not take construction jobs.</p></div></section>
-</main><footer><div class="wrap foot"><span>SolidLine Works · portfolio concept</span><a href="../../#work">Back to Pratik Web Studio ↗</a></div></footer>
-</body></html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>SolidLine Cases — Portfolio Demo</title>
+<meta name="description" content="A contractor case-study site with a sample estimate. Not a real quote.">
+<style>
+:root{--bg:#10110f;--ink:#f3f0e6;--muted:#b7b2a4;--yellow:#e2ff55;--line:#2c2e28}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+a{color:var(--yellow)}
+button,input,select{font:inherit}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--yellow);outline-offset:2px}
+.demo{font-size:12px;text-align:center;padding:8px 12px;background:#000;color:#ddd}
+.top{display:flex;justify-content:space-between;align-items:center;padding:16px 4vw;border-bottom:1px solid var(--line);letter-spacing:1px;font-size:12px;text-transform:uppercase}
+h1{font-size:clamp(48px,8vw,92px);line-height:.9;letter-spacing:-3px;margin:18px 4vw;font-weight:800}
+.cases{display:flex;gap:8px;padding:0 4vw 10px;flex-wrap:wrap}
+.cases button{background:transparent;color:var(--ink);border:1px solid var(--line);padding:10px 14px;cursor:pointer}
+.cases button.on{background:var(--yellow);color:#111;border-color:var(--yellow)}
+.case{margin:10px 4vw 24px;display:grid;grid-template-columns:1.1fr .9fr;border:1px solid var(--line)}
+.shot{min-height:280px;background:
+  linear-gradient(#ffffff14 1px,transparent 1px) 0 0/100% 28px,
+  linear-gradient(90deg,#ffffff14 1px,transparent 1px) 0 0/28px 100%,
+  #1a1c17;position:relative}
+.shot span{position:absolute;left:16px;bottom:14px;font-size:12px;letter-spacing:1px}
+.copy{padding:22px}
+.index{color:var(--yellow);font-weight:800;letter-spacing:2px}
+.copy h2{font-size:clamp(28px,4vw,42px);letter-spacing:-1px;margin:8px 0}
+.copy p{color:var(--muted);line-height:1.6}
+.specs{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
+.specs div{border-top:1px solid var(--line);padding-top:8px}
+.specs b{display:block;font-size:18px}
+.specs span{color:var(--muted);font-size:12px}
+.calc{margin:10px 4vw 40px;background:var(--yellow);color:#14140f;padding:22px;display:grid;grid-template-columns:1.1fr .9fr;gap:20px}
+.calc h2{margin:0 0 8px;font-size:32px;letter-spacing:-1px}
+label{display:block;font-size:12px;font-weight:700;margin:10px 0 4px}
+input,select{width:100%;padding:10px;border:1px solid #111;background:#f7ffd4}
+.out{font-size:clamp(32px,4vw,48px);font-weight:800;letter-spacing:-1px;line-height:1}
+.fine{font-size:12px;max-width:36ch}
+@media(max-width:800px){
+  .case,.calc{grid-template-columns:1fr}
+  h1{letter-spacing:-1.5px}
+}
+</style>
+</head>
+<body>
+<div class="demo">Portfolio demo · fictional contractor · the figure is a sample range, not a quote · <a href="../../#work">Back to portfolio</a></div>
+<header class="top"><span>SolidLine / cases</span><a href="../../#contact">Start a project</a></header>
+<h1>Show the job.<br>Then the range.</h1>
+<div class="cases" id="tabs"></div>
+<article class="case">
+  <div class="shot" id="shot"><span id="code"></span></div>
+  <div class="copy">
+    <div class="index" id="index"></div>
+    <h2 id="name"></h2>
+    <p id="text"></p>
+    <div class="specs" id="specs"></div>
+  </div>
+</article>
+<section class="calc">
+  <div>
+    <h2>Sample range</h2>
+    <p>Move the area and finish. The number is a teaching tool for the layout, not a site visit quote.</p>
+    <label for="area">Area in m²</label>
+    <input id="area" type="number" min="20" max="500" value="80">
+    <label for="finish">Finish</label>
+    <select id="finish">
+      <option value="900">Basic repair</option>
+      <option value="1400" selected>Standard finish</option>
+      <option value="2200">Detailed finish</option>
+    </select>
+  </div>
+  <div>
+    <div class="out" id="out"></div>
+    <p class="fine" id="fine"></p>
+  </div>
+</section>
+<script>
+const jobs = [
+  { id:"01", code:"HOUSE / 01", name:"Repaint a 2BHK", text:"Walls, ceilings, and woodwork for a lived-in flat. The page leads with the job, not a row of service icons.", specs:[["4 days","On site"],["Interior","Scope"],["Ahmedabad","Sample city"],["Paint","Trade"]] },
+  { id:"02", code:"SHOP / 02", name:"A 40 m² shopfront", text:"Shutters, sign wall, and a simple interior so a new shop can open. Specs sit beside the drawing, like a job sheet.", specs:[["12 days","On site"],["Retail","Scope"],["Surat","Sample city"],["Civil","Trade"]] },
+  { id:"03", code:"ROOM / 03", name:"One extra room", text:"A single-room add-on: slab, walls, and finish. Used to show how a contractor site can explain one job clearly.", specs:[["3 weeks","On site"],["Extension","Scope"],["Vadodara","Sample city"],["Masonry","Trade"]] }
+];
+let current = 0;
+function renderJob(){
+  const job = jobs[current];
+  document.getElementById("tabs").innerHTML = jobs.map((j,i) =>
+    `<button type="button" class="${i===current?"on":""}" data-i="${i}" aria-pressed="${i===current}">${j.id} ${j.name}</button>`
+  ).join("");
+  document.getElementById("code").textContent = job.code;
+  document.getElementById("index").textContent = "CASE " + job.id;
+  document.getElementById("name").textContent = job.name;
+  document.getElementById("text").textContent = job.text;
+  document.getElementById("specs").innerHTML = job.specs.map(s => `<div><b>${s[0]}</b><span>${s[1]}</span></div>`).join("");
+  document.getElementById("shot").style.background =
+    `linear-gradient(#ffffff14 1px,transparent 1px) 0 0/100% 28px,linear-gradient(90deg,#ffffff14 1px,transparent 1px) 0 0/28px 100%,hsl(${80 + current*40} 10% 12%)`;
+  document.querySelectorAll("#tabs button").forEach(b => b.onclick = () => { current = +b.dataset.i; renderJob(); });
+}
+function renderRange(){
+  const area = Math.max(20, Math.min(500, Number(document.getElementById("area").value) || 0));
+  const rate = Number(document.getElementById("finish").value);
+  const low = area * rate;
+  const high = Math.round(low * 1.18);
+  const rupee = n => "₹" + n.toLocaleString("en-IN");
+  document.getElementById("out").textContent = rupee(low) + " – " + rupee(high);
+  document.getElementById("fine").textContent = area + " m² at a sample rate. A real quote needs a site visit, materials, and your city’s labour. This does not book work.";
+}
+document.getElementById("area").addEventListener("input", renderRange);
+document.getElementById("finish").addEventListener("change", renderRange);
+renderJob();
+renderRange();
+</script>
+</body>
+</html>
