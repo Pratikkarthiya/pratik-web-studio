@@ -14,6 +14,6 @@ For GitHub Pages, select Settings → Pages → Deploy from a branch → main �
 
 ## Contact section
 
-The enquiry form prepares a copyable message; it does not send or store submissions. Add verified business email and WhatsApp contact details before using it to receive enquiries.
+The enquiry form prepares a copyable message; it does not send or store submissions. WhatsApp is not linked until a verified number is added.
 
-The portfolio designs are illustrative concepts, not completed customer projects.
+Clinic and café portfolio pages are concept designs. Other items are labelled as live applications or demos.
