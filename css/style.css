@@ -409,3 +409,18 @@ body>header{position:sticky;top:0;z-index:1000;isolation:isolate}
 .visual-ember .visual-caption{color:#fff1df}
 @media(max-width:650px){.ember-preview{min-height:150px;padding:16px 18px}.ember-preview strong{font-size:23px}}
 .price.price-quote{font-size:clamp(28px,3.2vw,34px);letter-spacing:-1px;line-height:1.2}
+
+.visual-tuition{background:radial-gradient(circle at 80% 10%,#f6e3a4,transparent 46%),linear-gradient(145deg,#2a4d9a,#6d8ed4)}
+.visual-contractor{background:radial-gradient(circle at 80% 0,#e2a23a88,transparent 42%),linear-gradient(145deg,#2c312e,#171a18)}
+.visual-shop{background:radial-gradient(circle at 15% 20%,#f6d7c4,transparent 50%),linear-gradient(145deg,#c45b3e,#e7c2a4)}
+.tuition-preview,.contractor-preview,.shop-preview{width:76%;min-height:168px;border-radius:14px;padding:18px 20px;display:flex;flex-direction:column;align-items:flex-start;box-shadow:10px 14px 0 #00000033}
+.tuition-preview{background:#f7f4ea;color:#1d2438;transform:rotate(-3deg)}
+.contractor-preview{background:#f4f1ea;color:#1b1e1c;transform:rotate(3deg)}
+.shop-preview{background:#fbf6ef;color:#2b211c;transform:rotate(-2deg);font-family:Georgia,serif}
+.tuition-preview span,.contractor-preview span,.shop-preview span{font-size:12px;font-weight:800}
+.tuition-preview strong,.contractor-preview strong,.shop-preview strong{font-size:22px;line-height:1.15;margin:14px 0 12px}
+.tuition-preview em,.shop-preview em{font-style:normal;color:#2a4d9a}
+.shop-preview em{color:#c45b3e;font-style:italic}
+.tuition-preview i,.contractor-preview i,.shop-preview i{font-style:normal;font-size:11px;background:#2a4d9a;color:#fff;border-radius:6px;padding:8px 10px}
+.contractor-preview i{background:#1b1e1c}
+.shop-preview i{background:#c45b3e;font-family:Arial,sans-serif}
